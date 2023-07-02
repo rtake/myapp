@@ -13,7 +13,7 @@ export const App = () => {
     return (
         <div>
             <hl style={{ color: "red" }}>こんにちは！</hl>
-            <ColoredMessage/>
+            <ColoredMessage color="blue" message="元気ですか？" />
             <p style={contentPinkStyle}>元気です！</p>
             <button onClick={onClickButton}>ボタン</button>
         </div>
