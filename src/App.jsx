@@ -1,11 +1,8 @@
+import { ColoredMessage } from "./components/ColoredMessage";
+
 export const App = () => {
     const onClickButton = () => {
         alert();
-    };
-
-    const contentStyle = {
-        color: "blue",
-        fontSize: "20px"
     };
 
     const contentPinkStyle = {
@@ -16,7 +13,7 @@ export const App = () => {
     return (
         <div>
             <hl style={{ color: "red" }}>こんにちは！</hl>
-            <p style={contentStyle}>お元気ですか？</p>
+            <ColoredMessage/>
             <p style={contentPinkStyle}>元気です！</p>
             <button onClick={onClickButton}>ボタン</button>
         </div>
