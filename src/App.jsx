@@ -3,10 +3,15 @@ export const App = () => {
         alert();
     };
 
+    const contentStyle = {
+        color: "blue",
+        fontSize: "20px"
+    };
+
     return (
         <div>
-            <hl>こんにちは！</hl>
-            <p>お元気ですか？</p>
+            <hl style={{ color: "red" }}>こんにちは！</hl>
+            <p style={contentStyle}>お元気ですか？</p>
             <button onClick={onClickButton}>ボタン</button>
         </div>
     );
