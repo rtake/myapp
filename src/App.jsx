@@ -8,8 +8,8 @@ export const App = () => {
     return (
         <div>
             <hl style={{ color: "red" }}>こんにちは！</hl>
-            <ColoredMessage color="blue" message="元気ですか？" />
-            <ColoredMessage color="pink" message="元気です！" />
+            <ColoredMessage color="blue">元気ですか？</ColoredMessage>
+            <ColoredMessage color="pink">元気です！</ColoredMessage>
             <button onClick={onClickButton}>ボタン</button>
         </div>
     );
