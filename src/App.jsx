@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Child1 } from "./components/Child1";
 import { Child4 } from "./components/Child4";
 
 export const App = () => {
@@ -12,6 +13,7 @@ export const App = () => {
         <div>
             <button onClick={onClickButton}>ボタン</button>
             <p>{num}</p>
+            <Child1/>
             <Child4/>
         </div>
     );
