@@ -1,6 +1,6 @@
 const style = {
     height: "50px",
-    backgroundColor: "lightglay"
+    backgroundColor: "green"
 }
 
 export const Child3 = () => {
