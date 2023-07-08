@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ColoredMessage } from "./components/ColoredMessage";
+import { Child4 } from "./components/Child4";
 
 export const App = () => {
     const [num, setNum] = useState(0);
@@ -10,11 +10,9 @@ export const App = () => {
 
     return (
         <div>
-            <hl style={{ color: "red" }}>こんにちは！</hl>
-            <ColoredMessage color="blue">元気ですか？</ColoredMessage>
-            <ColoredMessage color="pink">元気です！</ColoredMessage>
             <button onClick={onClickButton}>ボタン</button>
             <p>{num}</p>
+            <Child4/>
         </div>
     );
 }
