@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 import { Child1 } from "./components/Child1";
 import { Child4 } from "./components/Child4";
 
@@ -9,9 +9,11 @@ export const App = memo(() => {
         setNum(num+1);
     };
 
-    const onClickReset = () => {
+    // 実行されるたびに生成されるので,再レンダリングが起きる
+    // useCallback を使い, 再生成されないようにする
+    const onClickReset = useCallback(() => {
         setNum(0);
-    }
+    }, []);
 
     return (
         <div>
